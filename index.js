@@ -8,6 +8,12 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/healthy", (req, res) => {
+    res.json({
+        status: "healthy"
+    });
+});
+
 app.listen(4000, () => {
     console.log("Server running on port 4000");
 });
